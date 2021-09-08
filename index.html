@@ -1,13 +1,102 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-	<head> 
-		<title>LASTNAME Chapter8-9HandsOnExercise</title> 
-		<meta charset="utf-8"> 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Nguyen Chapter8-9HandsOnExercise</title>
+		<meta charset="utf-8">
 		<style>
-		
+		table {margin: auto;
+					border: 2.5px solid #123456;
+					border-spacing: 2.5;
+		}
+		td,th {padding: 0.5em;
+			border: .5px solid #123456;
+}
 		</style>
-	</head> 
-<body> 
+	</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th id="Q">Question</th>
+				<th id="A">Answer</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td headers ="title">Title of Movie</td>
+				<td headers ="title2">Bolt</td>
+			</tr>
+			<tr>
+				<td headers ="director">Director or producer</td>
+				<td headers ="title">Byron Howard and Chris Williams</td>
+			</tr>
+			<tr>
+				<td headers ="actor">Leading actor</td>
+				<td headers ="title">John Travolta</td>
+			</tr>
+			<tr>
+				<td headers ="actress">Leading actress</td>
+				<td headers ="title">Miley Cyrus</td>
+			</tr>
+			<tr>
+				<td headers ="rating">Rating (G, PG, PG-13, etc.)</td>
+				<td headers ="title">PG</td>
+			</tr>
+			<tr>
+				<td headers ="description">A brief description of the movie</td>
+				<td headers ="title">A dog named Bolt believes he has super powers and when his owner Penny is in danger he attempts to "rescue her"</td>
+			</tr>
+		</tbody>
+	</table>
 
-</body> 
-</html> 
+	<h1>Music Survey Form</h1>
+		<form method "post" action="http://webdevbasics/net/scripts/demo.php">
+					<label for="myName">*Name</label>
+					<input type="text" name="myName" id="myName" required="required"
+					placeholder= "your first and last name"><br><br>
+
+					<label for ="myEmail">*Email:</label>
+					<input type="text" name="myEmail" id="myEmail" required="required"
+					placeholder = "your@yourdomain.com"><br>
+				</fieldset>
+
+				<fieldset id="questions"><legend>Questions</legend>
+					Do you play an instrument?<br>
+					<input type="radio" name="myInstrument" id="Y" value="Yes">
+					Yes<br>
+					<input type="radio" name="myInstrument" id="N" value="No">
+					No<br>
+					<input type="radio" name="myInstrument" id="S" value="Somewhat">
+					Somewhat<br>
+
+					What genre(s) of music do you like?<br>
+					<input type="checkbox" name="myGenre" id="pop" value="Pop">
+					Pop<br>
+					<input type="checkbox" name="myGenre" id="rock" value="Rock">
+					Rock<br>
+					<input type="checkbox" name="myGenre" id="country" value="Country">
+					Country<br>
+					<input type="checkbox" name="myGenre" id="metal" value="Metal">
+					Metal<br>
+					<input type="checkbox" name="myGenre" id="other" value="Other">
+					Other<br>
+
+				</fieldset>
+
+				<fieldset id="concerts"><legend>Concerts</legend>
+					How many concerts have you been to?<br>
+					<select size="3" name="concerts" id="concerts">
+						<option value="None">None</option>
+						<option value="1-5">1-5</option>
+						<option value="6-10">6-10</option>
+						<option value="+10">+10</option>
+						<option value="I don't remember">I don't remember</option>
+					</select>
+				</fieldset>
+					<input id="mySubmit" type="submit" value="Submit">
+				</fieldset>
+			</div>
+
+</body>
+<footer>Cecilia Nguyen, S535795@nwmissouri.edu</footer>
+</html>
